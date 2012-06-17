@@ -11,6 +11,18 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="https://raw.github.com/bleech/jquery.magnizoom/master/libs/jquery/jquery.js"></script>
+    <script src="https://raw.github.com/bleech/jquery.magnizoom/master/dist/jquery.magnizoom.min.js"></script>
+    <script>
+      $(window).load(function () {
+        $('.magnify').magnizoom();
+      });
+    </script>
+    <style>
+      .magnify {
+        margin-bottom: 15px;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -29,7 +41,7 @@
 
 <p>Magnify images with ease. A no-brainer with touch support.</p>
 
-<h1><a href="http://bleech.github.com/jquery.magnizoom">DEMO</a></h1>
+<img class="magnify" src="https://github.com/bleech/jquery.magnizoom/raw/master/test/image-small.jpg" rel="https://github.com/bleech/jquery.magnizoom/raw/master/test/image-zoomed.jpg" />
 
 <h2>Getting Started</h2>
 
