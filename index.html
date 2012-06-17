@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jquery.magnizoom by bleech</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jquery.magnizoom</h1>
+        <p>jQuery Magnizoom</p>
+        <p class="view"><a href="https://github.com/bleech/jquery.magnizoom">View the Project on GitHub <small>bleech/jquery.magnizoom</small></a></p>
+        <ul>
+          <li><a href="https://github.com/bleech/jquery.magnizoom/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/bleech/jquery.magnizoom/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/bleech/jquery.magnizoom">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>jQuery Magnizoom</h1>
+
+<p>Magnify images with ease. A no-brainer with touch support.</p>
+
+<h1><a href="http://bleech.github.com/jquery.magnizoom">DEMO</a></h1>
+
+<h2>Getting Started</h2>
+
+<p>Download the <a href="https://raw.github.com/bleech/jquery.magnizoom/master/dist/jquery.magnizoom.min.js">production version</a> or the <a href="https://raw.github.com/bleech/jquery.magnizoom/master/dist/jquery.magnizoom.js">development version</a>.</p>
+
+<h3>Markup</h3>
+
+<div class="highlight">
+<pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"image-small.jpg"</span> <span class="na">rel=</span><span class="s">"image-zoomed.jpg</span> <span class="nt">/&gt;</span>
+</pre>
+</div>
+
+
+<h3>Initialization</h3>
+
+<div class="highlight">
+<pre><span class="nx">$</span><span class="p">(</span><span class="s1">'img'</span><span class="p">).</span><span class="nx">magnizoom</span><span class="p">();</span>
+</pre>
+</div>
+
+
+<h3>Options</h3>
+
+<div class="highlight">
+<pre><span class="c1">// setting global default options</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">magnizoom</span><span class="p">.</span><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">diameter</span><span class="o">:</span> <span class="mi">250</span>
+<span class="p">};</span>
+
+<span class="c1">// setting custom instance options</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'img'</span><span class="p">).</span><span class="nx">magnizoom</span><span class="p">({</span>
+  <span class="nx">diameter</span><span class="o">:</span> <span class="mi">200</span>
+<span class="p">});</span>
+</pre>
+</div>
+
+
+<h2>Contributing</h2>
+
+<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using <a href="https://github.com/cowboy/grunt">grunt</a>.</p>
+
+<p><em>Also, please don't edit files in the "dist" subdirectory as they are generated via grunt. You'll find source code in the "src" subdirectory!</em></p>
+
+<h2>License</h2>
+
+<p>Copyright (c) 2012 bleech<br>
+Licensed under the MIT, GPL licenses.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/bleech">bleech</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
