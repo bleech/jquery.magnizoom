@@ -49,9 +49,9 @@
 
       var container = $('.magnizoom');
 
-      that.elems.first().trigger('mouseenter');
+      that.elems.first().trigger('mousemove');
       notEqual(container.css('backgroundImage'), 'none', 'loads rel linked image');
-      ok(container.is(':visible'), 'shows container on mouseenter');
+      ok(container.is(':visible'), 'shows container on mousemove');
 
       start();
 

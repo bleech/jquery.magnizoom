@@ -1,4 +1,4 @@
-/*! jQuery Magnizoom - v0.1.0 - 2012-06-17
+/*! jQuery Magnizoom - v0.2.0 - 2012-08-05
 * https://github.com/bleech/jquery.magnizoom
 * Copyright (c) 2012 bleech; Licensed MIT, GPL */
 
@@ -42,7 +42,7 @@
     }
 
     // show / hide magnifier
-    this.elem.on('mouseenter touchstart', $.proxy(this.load, this));
+    this.elem.on('mousemove touchmove', $.proxy(this.load, this));
 
   };
 
@@ -104,7 +104,7 @@
     // watch for any mouse movement in the document
     $('body').on('mousemove touchmove', function (e) {
 
-      that.is_mobile = e.originalEvent.targetTouches ? true : false;
+      that.is_mobile = e.originalEvent && e.originalEvent.targetTouches ? true : false;
 
       // stop if we got two fingers on the screen
       if (that.is_mobile && e.originalEvent.targetTouches[1]) {

@@ -46,7 +46,7 @@
     }
 
     // show / hide magnifier
-    this.elem.on('mouseenter touchstart', $.proxy(this.load, this));
+    this.elem.on('mousemove touchmove', $.proxy(this.load, this));
 
   };
 
@@ -108,7 +108,7 @@
     // watch for any mouse movement in the document
     $('body').on('mousemove touchmove', function (e) {
 
-      that.is_mobile = e.originalEvent.targetTouches ? true : false;
+      that.is_mobile = e.originalEvent && e.originalEvent.targetTouches ? true : false;
 
       // stop if we got two fingers on the screen
       if (that.is_mobile && e.originalEvent.targetTouches[1]) {
